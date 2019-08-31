@@ -55,8 +55,8 @@
   margin-bottom: 5px;
   &:hover{
     @include themeable(
-      background, 
-      theme-container-background-hover, 
+      background,
+      theme-container-background-hover,
       lighten($green, 20%)
     );
   }
@@ -124,13 +124,13 @@
   font-size: 14px;
   -webkit-appearance: none;
   @include themeable(
-    background, 
-    theme-container-background, 
+    background,
+    theme-container-background,
     white
   );
   @include themeable(
-    color, 
-    theme-color, 
+    color,
+    theme-color,
     $black
   );
   @media screen and ( min-width: 1000px ){
@@ -163,8 +163,8 @@
 
 .chat__channeltypefilterbutton--active {
   @include themeable(
-    color, 
-    theme-anchor-color, 
+    color,
+    theme-anchor-color,
     darken($sky-blue, 5%)
   );
   @media screen and ( min-width: 1300px ){
@@ -174,8 +174,8 @@
 
 .chat__channeltypefilterbutton--inactive {
   @include themeable(
-    color, 
-    theme-secondary-color, 
+    color,
+    theme-secondary-color,
     lighten($medium-gray, 5%),
   );
 }
@@ -190,8 +190,8 @@
   display: inline-block;
   border-radius: 3px;
   @include themeable(
-    background, 
-    theme-background, 
+    background,
+    theme-background,
     $lightest-gray
   );
   border: 1px solid $light-medium-gray;
@@ -297,8 +297,8 @@
   padding: 80px 7%;
   z-index:10;
   @include themeable(
-    background, 
-    theme-background, 
+    background,
+    theme-background,
     white
   );
 }
@@ -312,8 +312,8 @@
   border:0px;
   font-size:1.8em;
   @include themeable(
-    color, 
-    theme-color, 
+    color,
+    theme-color,
     $black
   );
 }
@@ -324,8 +324,8 @@
   margin-bottom: 10px;
   max-width: 900px;
   @include themeable(
-    box-shadow, 
-    theme-container-box-shadow, 
+    box-shadow,
+    theme-container-box-shadow,
     $bold-shadow
   );
   h2{
@@ -384,18 +384,18 @@
   flex-direction: row;
   justify-content: space-between;
   @include themeable(
-    border, 
-    theme-container-border, 
+    border,
+    theme-container-border,
     1px solid $outline-color
   );
   @include themeable(
-    box-shadow, 
-    theme-container-box-shadow, 
+    box-shadow,
+    theme-container-box-shadow,
     $bold-shadow
   );
   @include themeable(
-    background, 
-    theme-container-background, 
+    background,
+    theme-container-background,
     white
   );
   flex-flow: row nowrap;
@@ -403,8 +403,8 @@
 
 .activechatchannel__conversation{
   @include themeable(
-    border-top, 
-    theme-container-border, 
+    border-top,
+    theme-container-border,
     1px solid $outline-color
   );
   order: 1;
@@ -420,38 +420,42 @@
 
 .activechatchannel__header{
   @include themeable(
-    border-bottom, 
-    theme-container-border, 
+    border-bottom,
+    theme-container-border,
     1px solid $light-medium-gray
   );
   padding: 10px 12px;
   font-weight: bold;
   font-size:14px;
   @include themeable(
-    background, 
-    theme-container-accent-background, 
+    background,
+    theme-container-accent-background,
     $light-gray
   );
   position: relative;
   a {
     @include themeable(
-      color, 
-      theme-color, 
+      color,
+      theme-color,
       $black
     );
   }
 
-  img {
+  .activechatchannel__channelconfig {
     height: 17px;
     position: absolute;
     right: 15px;
     top: 10px;
     cursor: pointer;
     @include themeable(
-      filter, 
-      theme-social-icon-invert, 
+      filter,
+      theme-social-icon-invert,
       invert(0)
-    );  
+    );
+
+    img {
+      height: 100%;
+    }
   }
 }
 
@@ -490,13 +494,13 @@
 
 .activechatchannel__form {
   @include themeable(
-    border-top, 
-    theme-container-border, 
+    border-top,
+    theme-container-border,
     1px solid $outline-color
   );
   @include themeable(
-    background, 
-    theme-container-accent-background, 
+    background,
+    theme-container-accent-background,
     #ededed
   );
   width: 100%;
@@ -525,8 +529,8 @@
   -webkit-overflow-scrolling: touch;
   // margin-left: -50%;
   @include themeable(
-    background, 
-    theme-container-accent-background, 
+    background,
+    theme-container-accent-background,
     white
   );
   // flex-basis: 80%;
@@ -565,8 +569,8 @@
   border:  0px;
   font-size: 30px;
   @include themeable(
-    color, 
-    theme-container-color, 
+    color,
+    theme-container-color,
     $medium-gray
   );
   padding:0px;
@@ -591,8 +595,8 @@
   font-size:0.8em;
   a{
     @include themeable(
-      color, 
-      theme-container-color, 
+      color,
+      theme-container-color,
       $dark-gray
     );
   }
@@ -687,8 +691,8 @@
   right:0px;
   padding: 17px;
   @include themeable(
-    background, 
-    theme-container-accent-background, 
+    background,
+    theme-container-accent-background,
     white
   );
   z-index: 20;
@@ -699,8 +703,8 @@
     margin-right: 15px;
     width: 54px;
     @include themeable(
-      background, 
-      theme-container-background, 
+      background,
+      theme-container-background,
       #f2f3f5
     );
     border-radius: 100px !important;
@@ -786,8 +790,8 @@
   padding:3px 0px;
   margin-bottom: -5px 0;
   @include themeable(
-    color, 
-    theme-color, 
+    color,
+    theme-color,
     $black
   );
   &:hover {
@@ -820,8 +824,8 @@
 
 .chatchanneltab--active {
   @include themeable(
-    background, 
-    theme-container-background, 
+    background,
+    theme-container-background,
     white
   );
   border: 1px solid $dark-purple;
@@ -912,8 +916,8 @@
   left: 0;
   right: 0;
   @include themeable(
-    background, 
-    theme-background, 
+    background,
+    theme-background,
     $lightest-gray
   );
   border-top: 1px solid $light-medium-gray;
@@ -961,14 +965,14 @@
   max-width: 100%;
   &:hover {
     @include themeable(
-      background, 
-      theme-container-background-hover, 
+      background,
+      theme-container-background-hover,
       $light-gray
     );
     .chatmessagebody__username--link {
       @include themeable(
-        background, 
-        theme-container-background-hover, 
+        background,
+        theme-container-background-hover,
         transparent
       );
     }
@@ -1039,8 +1043,8 @@
   display: inline-block;
   &:hover {
     @include themeable(
-      background, 
-      theme-container-background-hover, 
+      background,
+      theme-container-background-hover,
       transparent
     );
   }
@@ -1065,13 +1069,13 @@
   }
   a h1 {
     @include themeable(
-      color, 
-      theme-container-color, 
+      color,
+      theme-container-color,
       $black
     );
     @include themeable-important(
-      border-color, 
-      theme-container-color, 
+      border-color,
+      theme-container-color,
       #0a0a0a
     );
   }
@@ -1099,18 +1103,18 @@
   resize: none;
   flex-grow: 1;
   @include themeable(
-    background, 
-    theme-container-background, 
+    background,
+    theme-container-background,
     white
   );
   @include themeable(
-    border, 
-    theme-border, 
+    border,
+    theme-border,
     1px solid $outline-color
   );
   @include themeable(
-    color, 
-    theme-color, 
+    color,
+    theme-color,
     $black
   );
 }
@@ -1148,8 +1152,8 @@
   left: 35px;
   font-family: $monospace;
   @include themeable(
-    color, 
-    theme-color, 
+    color,
+    theme-color,
     $dark-gray
   );
 }
